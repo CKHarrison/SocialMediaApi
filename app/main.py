@@ -5,8 +5,8 @@ from .database import engine
 from .routers import post, user, auth, vote
 from .config import settings
 
-
-models.Base.metadata.create_all(bind=engine)
+# Only need this command for sqlAlchemy to create the tables upon first save
+# models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
