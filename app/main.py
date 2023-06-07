@@ -30,4 +30,4 @@ app.include_router(vote.router)
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome. Add /docs to the URL to test out the API"}
+    return {"message": "Welcome. Add /docs to the URL to test out the API. Deployed from CI/CD pipeline"}
